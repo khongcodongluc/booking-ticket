@@ -1,0 +1,179 @@
+.seat-container {
+    width: 1400px;
+    height: 600px;
+    margin-top: 100px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.seat-seat {
+    float: left;
+    width: 896px;
+    height: 500px;
+    background-color: rgb(51 48 48 / 22%);
+    margin: 20px;
+    margin-top: 0px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.seat-screen {
+    padding-bottom: 5px;
+    width: 860px;
+    height: 20px;
+    border-bottom: 5px solid #22485a;
+    color: black;
+    margin: 20px;
+    display: inline-block;
+}
+
+.seat-info {
+    padding: 10px;
+    width: 396px;
+    height: 540px;
+    background-color: rgb(51 48 48 / 22%);
+    margin: 20px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: black;
+
+}
+.seat-note {
+    float: left;
+    padding: 10px;
+    width: 876px;
+    height: 20px;
+    background-color: rgb(51 48 48 / 22%);
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.seat-seat-note {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    border-radius: 50px;
+    font-family: Arial;
+    
+
+}
+
+.chuadat {
+    background-color: #ffffff7a;
+    transition: 0.4s;
+}
+.dadat {
+    background-color: rgb(245, 118, 118);
+    transition: 0.4s;
+}
+.dangchon {
+    background-color: rgb(235, 235, 131);
+    animation: bounce 1s linear;
+}
+@keyframes bounce {
+    40% {
+        transform: translateY(-10px);
+    }
+}
+.seat-chair {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px; 
+    display: inline-block; 
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.seat-chair.last-child {
+    margin-right: 0px;
+}
+.seat-chair1{
+    padding: 40px;
+    display: inline-block;
+}
+
+.seat-chair1-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    left: 180px;
+}
+.seat-chair1-info.n2 {
+    left: 698px;
+}
+.seat-abc {
+    width: 22px;
+    height: 40px; 
+    display: inline-block; 
+    background-color: #ffffff7a;
+    margin-bottom: 14px;
+}
+
+
+.seat-infoTicket {
+    margin: 30px 10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.seat-infoTicket img{
+    width: 140px;
+    height: 200px;
+    float: left;
+}
+
+.seat-infoTicket p{
+    text-align: center;
+    width: 210px;
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 20px;
+    margin: 0px 0px 15px 20px;
+    border-bottom: 1px solid #ffffff7a;;
+    display: inline-block;
+}
+.seat-infoTicket input{
+    margin: 20px 130px;
+    border: none;
+    width: 120px;
+    height: 30px;
+    background-color: #3e7d9b;
+
+    transition: 0.6s;
+}
+.seat-infoTicket input:hover{
+    background-color: rgb(235, 235, 131);
+    transition: 0.6s;
+}
+.seat-div{
+    margin-top: 25px;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 1px solid  #ffffff7a;
+}
+.seat-label.sc::before {
+    content: "Suất chiếu: ";
+}
+.seat-label.n::before {
+    content: "Ngày: ";
+}
+.seat-label.v::before {
+    content: "Vé: ";
+}
+.seat-label.t::before {
+    content: "Tổng tiền: ";
+}
+.seat-label.t::after {
+    content: " đ";
+}
